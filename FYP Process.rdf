@@ -1,0 +1,1910 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology/"
+     xml:base="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:FYP_Process_Ontology="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology/1.0"/>
+        <rdfs:comment>FYP Process Ontology</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#allocatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#allocatedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Resource"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Administrator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#allocatesResource -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#allocatesResource">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Administrator"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#approvedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#approvedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ExtensionRequest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Supervisor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#assessedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#assessedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Project"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Evaluator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#assignedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#assignedTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Supervisor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#documentsArtifact -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#documentsArtifact">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#TechnicalDocumentation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#TechnicalResource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#evaluatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#evaluatedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectProposal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Evaluator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#evaluates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#evaluates">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Evaluator"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#evaluatesMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#evaluatesMember">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Evaluator"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#GroupMember"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#followsProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#followsProcess">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Document"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#SubmissionProcess"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#forSemester -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#forSemester">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProposalDeadline"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#AcademicCalendar"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasAccess -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasAccess">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Document"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasAccessTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasAccessTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasCriterion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasCriterion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasExpertise -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasExpertise">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Supervisor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectDomain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasHistory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasHistory">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Project"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectHistory"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasMeeting -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasMeeting">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#SupervisionActivity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#MeetingSchedule"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasMilestone -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasMilestone">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectExecution"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Milestone"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasParticipant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasParticipant">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#MeetingSchedule"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasPartner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasPartner">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Project"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectPartner"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasPermission -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasPermission">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#RoleBasedPermission"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#RoleBasedPermission"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasPhase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasPhase">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Project"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectPhase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasRequirement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasRequirement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasSelectionStep -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasSelectionStep">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectSelection"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#SelectionActivity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasStep -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasStep">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProposalProcess"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProcessStep"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#includedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#includedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Milestone"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Timeline"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#initiatesRequest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#initiatesRequest">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#MeetingRequestProcess"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#isPartOfTimeline -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#isPartOfTimeline">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Milestone"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Timeline"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#nextStep -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#nextStep">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#SelectionActivity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#SelectionActivity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#performedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#performedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectSelection"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#precedesPhase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#precedesPhase">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectPhase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectPhase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#presentationFormat -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#presentationFormat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#FinalPresentation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#producedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#producedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Document"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#producesDocument -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#producesDocument">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectPhase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#providesFeedback -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#providesFeedback">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Supervisor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Feedback"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#requestedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#requestedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ExtensionRequest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#requiresDocumentation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#requiresDocumentation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Implementation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ImplementationDocumentation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#requiresResource -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#requiresResource">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectType"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#resolvesConflict -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#resolvesConflict">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Administrator"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ConflictResolutionProcess"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#scheduledDuring -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#scheduledDuring">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#DefenseSession"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectPhase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#AcademicCalendar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#EvaluationPhase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#spansSemester -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#spansSemester">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectPhase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#AcademicCalendar"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#submittedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#submittedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#supervisedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#supervisedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Supervisor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#triggers -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#triggers">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProposalRejected"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#RejectionProcess"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#triggersChangeProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#triggersChangeProcess">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectExecution"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ChangeManagementProcess"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#triggersException -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#triggersException">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Milestone"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#DeadlineException"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#triggersProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#triggersProcess">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ConflictResolutionProcess"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ExtensionRequest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#usedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#usedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Assessment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#EvaluationCriteria"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#usesCriterion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#usesCriterion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProposalEvaluation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#usesResource -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#usesResource">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Implementation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#TechnicalResource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#agenda -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#agenda">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#MeetingSchedule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#allocationDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#allocationDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Resource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#deadlineDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#deadlineDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProposalDeadline"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#endDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#endDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectApproval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasResponsibility -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasResponsibility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ExternalSupervisor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#InternalSupervisor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#individualScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#individualScore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#GroupMember"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#languageTag -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#languageTag">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#logEntry -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#logEntry">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectHistory"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#maxPartners -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#maxPartners">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Project"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#maxProjects -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#maxProjects">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Supervisor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#maxUsage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#maxUsage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#LimitedResource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#meetingFrequency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#meetingFrequency">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#SupervisionActivity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#milestoneDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#milestoneDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Milestone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#modifiedBy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#modifiedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectHistory"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#passingScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#passingScore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Assessment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#permissionType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#permissionType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#RoleBasedPermission"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#phaseEndDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#phaseEndDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectPhase"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#phaseStartDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#phaseStartDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectPhase"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#presentationFormat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#presentationFormat">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#requiredContent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#requiredContent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#FinalReport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#requiredFormat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#requiredFormat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#FinalReport"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectProposalDocument"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#requiredSection -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#requiredSection">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectProposalDocument"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#requiredSections -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#requiredSections">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectIdeaDocument"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#resolutionDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#resolutionDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ConflictResolutionProcess"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#resourceAvailability -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#resourceAvailability">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Resource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#riskLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#riskLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Project"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#semesterStartDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#semesterStartDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#AcademicCalendar"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#startDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#startDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectSelection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#startTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#startTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#MeetingSchedule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#stepDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#stepDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#SelectionActivity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#stepOrder -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#stepOrder">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#SelectionActivity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#studentEmail -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#studentEmail">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#submissionDeadline -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#submissionDeadline">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#trackingMethod -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#trackingMethod">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProgressTracking"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#triggerCondition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#triggerCondition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#AdaptiveWorkflow"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#AcademicCalendar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#AcademicCalendar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Timeline"/>
+        <rdfs:comment>Institutional timeline affecting project scheduling.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#AcademicResource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#AcademicResource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#TechnicalResource"/>
+        <rdfs:comment>Guidelines and reference materials.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Actor">
+        <rdfs:comment>Active participants with defined roles in the project lifecycle.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#AdaptiveWorkflow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#AdaptiveWorkflow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Process"/>
+        <rdfs:comment>Dynamic processes triggered by events (e.g., delays, resubmissions).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Administrator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Administrator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Actor"/>
+        <rdfs:comment>Manages logistical and administrative tasks.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ApprovalProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ApprovalProcess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Process"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#RevisionProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Assessment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Assessment">
+        <rdfs:comment>Evaluation criteria and methods</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#AssessmentForm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#AssessmentForm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ChangeManagementProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ChangeManagementProcess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#CodeDocumentation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#CodeDocumentation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#TechnicalDocumentation"/>
+        <rdfs:comment>Annotations for software projects.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#CommitteeMember -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#CommitteeMember">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Evaluator"/>
+        <rdfs:comment>Internal academic evaluator.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ComplianceCheck -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ComplianceCheck">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Assessment"/>
+        <rdfs:comment>Verification of adherence to institutional/technical standards.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ConflictResolutionProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ConflictResolutionProcess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Process"/>
+        <rdfs:comment>Formal workflow to resolve disputes (e.g., deadline extensions, resource conflicts).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#DeadlineException -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#DeadlineException">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#DefensePreparation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#DefensePreparation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#EvaluationPhase"/>
+        <rdfs:comment>Planning for the final presentation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#DefenseRubric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#DefenseRubric">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Rubric"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#DefenseSession -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#DefenseSession">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Milestone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#DepartmentAdministrator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#DepartmentAdministrator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Administrator"/>
+        <rdfs:comment>Handles institutional workflows.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Document -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Document">
+        <rdfs:comment>Formal artifacts produced during the project.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#DocumentEvaluation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#DocumentEvaluation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Assessment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#DocumentationCompleteness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#DocumentationCompleteness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#EvaluationCriteria"/>
+        <rdfs:comment>Report thoroughness.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#EvaluationCriteria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#EvaluationCriteria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Assessment"/>
+        <rdfs:comment>Standards for judging quality.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#EvaluationOutcome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#EvaluationOutcome">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#EvaluationPhase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#EvaluationPhase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#EvaluationPhase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectPhase"/>
+        <rdfs:comment>Formal assessment of deliverables.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Evaluator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Evaluator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Actor"/>
+        <rdfs:comment>Responsible for objective assessment.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ExtensionPeriod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ExtensionPeriod">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Timeline"/>
+        <rdfs:comment>Approved deadline adjustments.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ExtensionRequest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ExtensionRequest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ExternalExaminer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ExternalExaminer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Evaluator"/>
+        <rdfs:comment>Independent third-party assessor.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ExternalSupervisor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ExternalSupervisor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Supervisor"/>
+        <rdfs:comment>Mentor from an external organization.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Feedback -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Feedback">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#FinalPresentation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#FinalPresentation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#FinalReport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#FinalReport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Document"/>
+        <rdfs:comment>Comprehensive summary of project outcomes and analysis.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#FinalSubmissionDeadline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#FinalSubmissionDeadline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Milestone"/>
+        <rdfs:comment>Cutoff for deliverables.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#FormatRequirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#FormatRequirement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Requirement"/>
+        <rdfs:comment>e.g., page limits</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#GradeAssignment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#GradeAssignment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#EvaluationPhase"/>
+        <rdfs:comment>Planning for the final presentation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#GradingScheme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#GradingScheme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Assessment"/>
+        <rdfs:comment>Weightage distribution for scoring.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#GroupMember -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#GroupMember">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Student"/>
+        <rdfs:comment>Member of a collaborative team.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Guidelines -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Guidelines">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#AcademicResource"/>
+        <rdfs:comment>Institutional project rules.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Hardware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Hardware">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#TechnicalResource"/>
+        <rdfs:comment>Physical devices (e.g., lab equipment).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Implementation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Implementation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectExecution"/>
+        <rdfs:comment>Core development or research work.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ImplementationDocumentation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ImplementationDocumentation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#IndividualStudent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#IndividualStudent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Student"/>
+        <rdfs:comment>Solo project participant.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#InterimReport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#InterimReport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProgressReport"/>
+        <rdfs:comment>Mid-project comprehensive review.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#InternalSupervisor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#InternalSupervisor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Supervisor"/>
+        <rdfs:comment>Faculty member from the institution.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#LimitedResource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#LimitedResource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Resource"/>
+        <rdfs:comment>Resources with usage constraints (e.g., &quot;Cloud Server (max 5 users)&quot;).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#MeetingRequestProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#MeetingRequestProcess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#MeetingSchedule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#MeetingSchedule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Process"/>
+        <rdfs:comment>Scheduled interactions between students, supervisors, or partners.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Milestone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Milestone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Timeline"/>
+        <rdfs:comment>Critical deadlines.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#MonthlyReport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#MonthlyReport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProgressReport"/>
+        <rdfs:comment>Short-term progress tracking.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#PresentationMaterials -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#PresentationMaterials">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Document"/>
+        <rdfs:comment>Slides or visual aids for defenses.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Process">
+        <rdfs:comment>Formal workflows or procedures in the project lifecycle</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProcessStep -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProcessStep">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProgressReport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProgressReport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Document"/>
+        <rdfs:comment>Periodic updates on project status.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProgressReviewDate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProgressReviewDate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Milestone"/>
+        <rdfs:comment>Scheduled check-ins.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProgressTracking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProgressTracking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Project -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Project">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#hasPhase"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectPhase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The root class for all final-year projects. Covers the full lifecycle from selection to evaluation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectApproval -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectApproval">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectInitiation"/>
+        <rdfs:comment>Formal validation by institutional authorities.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectClosure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectClosure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectPhase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectCoordinator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectCoordinator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Administrator"/>
+        <rdfs:comment>Oversees timelines and resources.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectDomain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectDomain"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectExecution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectExecution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectPhase"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectInitiation"/>
+        <rdfs:comment>Active implementation phase including development and testing.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectHistory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectHistory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Document"/>
+        <rdfs:comment>Log of project changes (e.g., phase transitions, feedback updates).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectIdeaDocument -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectIdeaDocument">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Document"/>
+        <rdfs:comment>Initial concept outline.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectInitiation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectInitiation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectPhase"/>
+        <rdfs:comment>Phase involving topic selection, approval, and resource allocation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectPartner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectPartner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectPhase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectPhase">
+        <rdfs:comment>Temporal segments representing distinct stages in the final year project lifecycle.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectProposal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectProposal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectPhase"/>
+        <rdfs:comment>Phase for drafting, submitting, and evaluating the formal proposal.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectProposalDocument -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectProposalDocument">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Document"/>
+        <rdfs:comment>Detailed plan submitted for approval.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectSelection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectSelection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectInitiation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#performedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Student"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Process of choosing a project topic.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Project"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProposalApproved -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProposalApproved">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#EvaluationOutcome"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProposalRejected"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProposalDeadline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProposalDeadline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Milestone"/>
+        <rdfs:comment>Final submission date for proposals.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProposalEvaluation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProposalEvaluation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectProposal"/>
+        <rdfs:comment>Assessment of the proposal&apos;s feasibility.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProposalPreparation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProposalPreparation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectProposal"/>
+        <rdfs:comment>Creation of the proposal document.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProposalProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProposalProcess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Process"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#RejectionProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProposalRejected -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProposalRejected">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#EvaluationOutcome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProposalRequirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProposalRequirement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Requirement"/>
+        <rdfs:comment>e.g., required sections in a proposal</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProposalSubmission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProposalSubmission">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectProposal"/>
+        <rdfs:comment>Formal delivery to the evaluation committee.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ReferenceMaterials -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ReferenceMaterials">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#AcademicResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#RejectionProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#RejectionProcess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ReportRubric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ReportRubric">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Rubric"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Requirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Requirement">
+        <rdfs:comment>Constraints or specifications for project elements</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Resource">
+        <rdfs:comment>Assets required to execute the project.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#RevisionProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#RevisionProcess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#RoleBasedPermission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#RoleBasedPermission">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Requirement"/>
+        <rdfs:comment>Access control rules (e.g., &quot;Students cannot edit approved documents&quot;).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Rubric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Rubric">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Assessment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#SelectionActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#SelectionActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectPhase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Software -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Software">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#TechnicalResource"/>
+        <rdfs:comment>Applications and platforms (e.g., MATLAB).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Actor"/>
+        <rdfs:comment>Primary executor responsible for project deliverables.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#SubmissionProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#SubmissionProcess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#SupervisionActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#SupervisionActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Supervisor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Supervisor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Actor"/>
+        <rdfs:comment>Academic mentor providing guidance and feedback.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#SystemArchitectureDiagram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#SystemArchitectureDiagram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#TechnicalDocumentation"/>
+        <rdfs:comment>Visual design representations.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#TechnicalDocumentation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#TechnicalDocumentation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Document"/>
+        <rdfs:comment>Detailed implementation records.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#TechnicalQuality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#TechnicalQuality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#EvaluationCriteria"/>
+        <rdfs:comment>Code/research rigor.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#TechnicalRequirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#TechnicalRequirement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Requirement"/>
+        <rdfs:comment>e.g., coding standards</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#TechnicalResource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#TechnicalResource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Resource"/>
+        <rdfs:comment>Tools, software, or infrastructure used for implementation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Templates -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Templates">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#AcademicResource"/>
+        <rdfs:comment>Predefined document structures.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectExecution"/>
+        <rdfs:comment>Quality assurance and validation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Timeline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Timeline">
+        <rdfs:comment>Defines deadlines and academic schedules.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Validation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Validation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectExecution"/>
+        <rdfs:comment>Final verification against objectives.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#AI_Chatbot_Project -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#AI_Chatbot_Project">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Project"/>
+        <FYP_Process_Ontology:maxPartners rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</FYP_Process_Ontology:maxPartners>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#AI_Chatbot_Project_Evaluation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#AI_Chatbot_Project_Evaluation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Assessment"/>
+        <FYP_Process_Ontology:passingScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70.0</FYP_Process_Ontology:passingScore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Alice_Smith -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Alice_Smith">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Student"/>
+        <FYP_Process_Ontology:hasAccessTo rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Alice_Smith"/>
+        <FYP_Process_Ontology:supervisedBy rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Dr._Sarah_Lee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Artificial_Intelligence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Artificial_Intelligence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectDomain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Cloud_Server_AWS_Limited -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Cloud_Server_AWS_Limited">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Process"/>
+        <FYP_Process_Ontology:usedBy rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#AI_Chatbot_Project"/>
+        <FYP_Process_Ontology:maxUsage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</FYP_Process_Ontology:maxUsage>
+        <FYP_Process_Ontology:resourceAvailability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</FYP_Process_Ontology:resourceAvailability>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Conflict_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Conflict_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ConflictResolutionProcess"/>
+        <FYP_Process_Ontology:resolvesConflict rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Conflict_1"/>
+        <FYP_Process_Ontology:resolutionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-01T14:30:00</FYP_Process_Ontology:resolutionDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Defense_Rubric_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Defense_Rubric_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#DefenseRubric"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Department_Administrator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Department_Administrator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Administrator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Dr._Sarah_Lee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Dr._Sarah_Lee">
+        <FYP_Process_Ontology:hasExpertise rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Artificial_Intelligence"/>
+        <FYP_Process_Ontology:hasResponsibility>&quot;Guide students through proposal, implementation, and defense phases&quot;</FYP_Process_Ontology:hasResponsibility>
+        <FYP_Process_Ontology:maxProjects rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</FYP_Process_Ontology:maxProjects>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Final_Submission -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Final_Submission">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#FinalSubmissionDeadline"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#MATLAB_License -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#MATLAB_License">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#TechnicalResource"/>
+        <FYP_Process_Ontology:usesResource rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#AI_Chatbot_Project"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Prof_John_Green -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Prof_John_Green">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ExternalExaminer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Proposal_Deadline -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Proposal_Deadline">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProposalDeadline"/>
+        <FYP_Process_Ontology:milestoneDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-15T23:59:59</FYP_Process_Ontology:milestoneDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Proposal_Draft_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Proposal_Draft_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectProposalDocument"/>
+        <FYP_Process_Ontology:producedBy rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#AI_Chatbot_Project"/>
+        <FYP_Process_Ontology:requiredFormat>&quot;PDF&quot;</FYP_Process_Ontology:requiredFormat>
+        <FYP_Process_Ontology:submissionDeadline rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-15T23:59:59</FYP_Process_Ontology:submissionDeadline>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Testing_Phase_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Testing_Phase_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Testing"/>
+        <FYP_Process_Ontology:hasPhase rdf:resource="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#AI_Chatbot_Project"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Actor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Assessment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Requirement"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Administrator"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Evaluator"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Student"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Supervisor"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#DefensePreparation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#EvaluationOutcome"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#GradeAssignment"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Document"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProjectType"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Resource"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#FinalSubmissionDeadline"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProgressReviewDate"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#ProposalDeadline"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#SelectionActivity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Student"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dell/ontologies/2025/3/FYP_Process_Ontology#Supervisor"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
